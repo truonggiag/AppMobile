@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RessetPassActivity">
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:src="@drawable/foodshop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        android:id="@+id/line1"
+        android:gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtresetpass"
+            android:hint=" Email"
+            android:drawableStart="@drawable/mail"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:background="@drawable/back_edittext"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnrepass"
+        android:background="@drawable/back_login"
+        android:text="Quên mật khẩu "
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"/>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@+id/btnrepass"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/support"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

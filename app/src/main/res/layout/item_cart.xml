@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:background="#ff66"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_giohang_image"
+            android:layout_weight="3"
+            android:src="@drawable/icon_new_w35"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_giohang_ten"
+                    android:text="Tên sản phẩm"
+                    android:gravity="left"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#111111"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_giohang_gia"
+                    android:text="Giá: 100.000 VNĐ"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="#ff0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:id="@+id/item_giohang_check"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/item_giohang_tru"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/horizontal"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/item_giohang_soluong"
+                    android:textStyle="bold"
+                    android:textColor="#ff66"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="5"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/item_giohang_cong"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/add"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/item_giohang_giasp2"
+                    android:textStyle="bold"
+                    android:textColor="#ff66"
+                    android:textSize="@dimen/_18ssp"
+                    android:text="100.000 VNĐ"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

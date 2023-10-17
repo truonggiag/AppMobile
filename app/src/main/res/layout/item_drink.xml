@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:cardBackgroundColor="#C8E4B2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:background="@drawable/back_edit"
+        android:layout_margin="5dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/itemdrink_image"
+            android:layout_weight="3"
+            android:src="@drawable/icon_new_w35"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/itemdrink_ten"
+                android:text="Tên sản phẩm"
+                android:gravity="top|left"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="#111111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/itemdrink_gia"
+                android:text="Giá: "
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_17ssp"
+                android:textColor="#ff0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+           <!-- <TextView
+                android:id="@+id/itemdrink_mota"
+                android:text="Mô tả: "
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#111111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
